@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwindcss style apply */
+
+.grid-2 {
+	@apply grid grid-cols-1 lg:grid-cols-2 gap-6;
+}
+
+.grid-3 {
+	@apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center;
+}
+
+.grid-4 {
+	@apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center items-center;
+}
+
+.grid-5 {
+	@apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 justify-center items-center;
+}
+
+.grid-4-footer {
+	@apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center;
+}
+.flex-between {
+	@apply flex justify-between items-center;
+}
+
+.flex-center {
+	@apply flex justify-center items-center;
+}
+
+:root {
+	--primaryColor: #792dc3;
+	--secondryColor: #24324a;
+	--whiteColor: #fff;
+	--blackColor: #040404;
+	--grayColor: #1a1a1a;
+	--sixtypx: 60px;
+	--thirtysixpx: 36px;
+	--twentyfourpx: 24px;
+	--twentypx: 20px;
+	--sixteenpx: 16px;
+	--fourteenpx: 14px;
+	--twelvepx: 12px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: "Rubik", sans-serif;
+	/* border: 1px solid red;  */
+}
+body {
+	background: var(--blackColor);
+}
+
+::-webkit-scrollbar {
+	background-color: var(--whiteColor);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--primaryColor);
+	border-radius: 40px;
+}
+
+/* CSS */
+.cta {
+	padding: 0.5rem 1.4rem;
+	background: var(--primaryColor);
+	color: var(--whiteColor);
+	border-radius: 40px;
+	border: 1px solid var(--whiteColor);
+}
+
+.cta:hover {
+	color: var(--primaryColor);
+	background: var(--whiteColor);
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: var(--sixtypx);
+	font-weight: 600;
+	line-height: 60px;
+}
+
+h2 {
+	font-size: var(--thirtysixpx);
+	font-weight: 600;
+}
+
+h3 {
+	font-size: var(--twentyfourpx);
+	font-weight: 500;
+}
+
+h4 {
+	font-size: var(--twentypx);
+}
+h5 {
+	font-size: var(--sixteenpx);
+}
+
+h6 {
+	font-size: var(--fourteenpx);
+}
+
+p {
+	font-size: var(--sixteenpx);
+	font-weight: 300;
+	line-height: 24px;
+}
+
+::placeholder {
+	font-size: var(--fourteenpx);
+	color: var(--grayColor);
+}
+
+section,
+footer {
+	padding: 20px 3%;
+}
+
+@media screen and (max-width: 1024px) {
+	h1 {
+		font-size: var(--thirtysixpx);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		padding: 20px 3%;
+	}
+	h2 {
+		font-size: var(--twentyfourpx);
+	}
+	h3 {
+		font-size: var(--twentypx);
+	}
+
+	h4 {
+		font-size: var(--sixteenpx);
+	}
+
+	h5 {
+		font-size: var(--fourteenpx);
+	}
+
+	.cta {
+		font-size: var(--fourteenpx);
+		padding: 0.8rem 1.6rem;
+	}
+}
