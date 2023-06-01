@@ -17,9 +17,9 @@ const home = () => {
 			<Sponser />
 			<Sponser />
 			<Services />
-			<Courses />
-			<MoreServices />
 			<Job />
+			<MoreServices />
+			<Courses />
 			<Testimonial />
 		</>
 	);
